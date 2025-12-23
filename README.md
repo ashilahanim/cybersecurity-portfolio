@@ -1,4 +1,4 @@
-# Cybersecurity Portfolio – Nur Ashila Hanim
+# Cybersecurity Portfolio – Nur Ashila Hanim Binti Mohd Nor
 
 ## About Me
 I am an aspiring cybersecurity professional with a background in health sciences.
