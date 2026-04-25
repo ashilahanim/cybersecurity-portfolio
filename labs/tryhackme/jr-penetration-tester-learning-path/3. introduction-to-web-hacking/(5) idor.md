@@ -1,27 +1,28 @@
 # IDOR (Insecure Direct Object Reference)
 
 ## Objective
-To learn about a vulnerability that involves changing the ID perimeter to access others information. 
+To understand how IDOR vulnerabilities allow unauthorized access to other users' data by manipulating identifiers.
 
 ## What I Learned
-Someone can access others' data just by changing the an ID.
+IDOR occurs when an application does not properly check authorization. This allows a user to access other users' data by modifying an ID parameter.
 
 ## Tools Used
 - https://www.base64decode.org/
 - https://www.base64encode.org/
 
-## Command(s) Used (If Any)
-
 ## Steps I Took
-1. I opened a site that lists out emails of a user.
-2. This user has placed an order from an online shop.
-3. i clicked the link to the order confirmation site and alter the URL by tweaking the order ID from 1234 to 1000.
-4. Another user's order from the same shop can be clearly seen.
+1. Accessed a web application that displays a user's order details.
+2. Observed that the URL contained an order ID parameter.
+3. Modified the order ID in the URL (e.g., from 1234 to 1000).
+4. Successfully accessed another user's order information.
 
 ## Key Takeaway
-IDOR is a vulnerability involving a failed authorization but passes authentication
+IDOR is an authorization vulnerability where authentication is present, but proper access control is missing.
 
 ## Reflection
-- Three types of IDOR; a. Direct IDOR, b. Indirect IDOR and c. File-based IDOR
-- Hashed MD5 and base64 are most common
-- Not necessarily in the address bar, sometimes have to inspect the web page on the Network section to find out the AJAZ request or the JSON ID
+- There are different types of IDOR:
+  - Direct IDOR
+  - Indirect IDOR
+  - File-based IDOR
+- Encoded values such as Base64 or hashed IDs (e.g., MD5) are sometimes used but do not guarantee security.
+- IDOR may not always be visible in the URL and can sometimes be found in network requests (e.g., AJAX or JSON responses).
