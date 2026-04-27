@@ -16,7 +16,10 @@ Web application or web developers sometimes unintentionally failed to validate u
 - TryHackMe AttackBox
 
 ## Steps I Took
-1. 
+1. Accessed a web application with a parameter that loads files (e.g., '?page=')
+2. Tested different inputs by modifying the parameter value.
+3. Attempted diretory transversal using payloads like '../../../../etc/passwd'.
+4. Successfully accessed sensitive files on the server.
 
 ## Key Takeaway
 - Improper input validation can lead attackers to alter the URL to access files that are not supposed to be on open and also can execute malicious code from the URL.
