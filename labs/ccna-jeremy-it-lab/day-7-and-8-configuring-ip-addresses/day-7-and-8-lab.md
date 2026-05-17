@@ -1,7 +1,7 @@
 ##![alt text](image.png)
 
 ##1. Configure R1's hostname
-- I haven't configured R!
+- I haven't configured R1
 - I clicked on R1
 - I navigated to CLI tab
 - In the command line, I used en command to enter privilege exec mode
