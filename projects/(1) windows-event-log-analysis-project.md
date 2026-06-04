@@ -1,4 +1,4 @@
-# Windows Event Log Analysis: Detect Suspicios Login Activity
+# Windows Event Log Analysis: Detect Suspicious Login Activity
 
 ## Incident Title: Suspicious Login Activity Detected
 
